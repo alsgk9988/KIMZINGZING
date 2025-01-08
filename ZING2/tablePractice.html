@@ -6,7 +6,9 @@
     <title>zingzing's table</title>
 </head>
 <body>
-    <table border="1" width="500"> <!--border는 틀, width는 너비-->
+    <br/> <!--한 행 띄우기-->
+    <table border="10" width="500" cellpadding="10" cellspacing="10"> <!--border는 틀, width는 너비, cellpadding은 셀과 글자 사이 간격, cellspacing은 셀끼리의 간격 -->
+        <caption>시간표</caption> <!--table에 딸린 것. caption은 table의 맨 밑에 가도 됨-->
         <tr>
             <th>구분</th> <!--th는 td와 달리 가운데 정렬, 진하게가 포함됨-->
             <th>월요일</th>
@@ -21,8 +23,7 @@
         </tr>
         <tr>
             <td>2교시</td>
-            <td>과학</td>
-            <td>수학</td>
+            <td colspan="2" align="center">과학</td> <!--colspan="2" 넣으면 2교시 월요일 과학에서부터 총 두 칸을 가로로 셀병합-->
         </tr>
     </table>
 </body>
